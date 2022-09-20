@@ -4,6 +4,7 @@ class Restaurant:
         """初始化属性restarant_name,cuisine_type"""
         self.restauran_name = restaurant_name
         self.cuisine_type = cuisine_type
+        self.num_served = 0
 
     def describe_restarant(self):
         """打印餐厅的名字"""
@@ -16,17 +17,12 @@ class Restaurant:
         print('This restaurant is opening,welcome!')
 
 
-
-my_restaurant = Restaurant('Alex', 'Cheese')
-my_restaurant.describe_restarant()
-my_restaurant.open_restaurant()
-
-
-my_restaurant = Restaurant('Chou', 'lamian')
-my_restaurant.describe_restarant()
-my_restaurant.open_restaurant()
+    def num_served(self):
+        """打印这家餐厅已经接待多少人"""
+        print(f'This restaurant has served {self.num_served} people.')
 
 
-my_restaurant = Restaurant('Sichuan', 'mala')
-my_restaurant.describe_restarant()
-my_restaurant.open_restaurant()
+restaurant = Restaurant('sichuan', 'mala',)
+restaurant.describe_restarant()
+restaurant.open_restaurant()
+restaurant.num_served()
