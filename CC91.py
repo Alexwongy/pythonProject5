@@ -14,15 +14,24 @@ class Restaurant:
 
 
     def open_restaurant(self):
-        print('This restaurant is opening,welcome!')
+        """显示一条消息，餐厅正在营业"""
+        msg = f'This restaurant is opening,welcome!'
+        print(msg)
 
 
     def num_served(self):
         """打印这家餐厅已经接待多少人"""
         print(f'This restaurant has served {self.num_served} people.')
 
+    def set_num_served(self, num_served):
+        """让用户能够设置就餐人数"""
+        self.num_served = num_served
+        print(f'There are {num_served} in the restaurant')
 
-restaurant = Restaurant('sichuan', 'mala',)
+
+
+
+restaurant = Restaurant('sichuan', 'mala') #num_served = 10 不能写在此处
 restaurant.describe_restarant()
 restaurant.open_restaurant()
-restaurant.num_served()
+restaurant.set_num_served(10)
