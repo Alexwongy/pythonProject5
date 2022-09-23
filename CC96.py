@@ -43,8 +43,8 @@ class IceCreamStand(Restaurant):
         for flavor in self.flavors:
             print(f"- {flavor.title()}")
 
-
-big_one = IceCreamStand('The Big One')
-big_one.flavors = ['vanilla', 'chocolate', 'black cherry']
-big_one.describe_restaurant()
-big_one.show_flavors()
+if __name__ == "__main__":  #引用的时候不想执行要加上这句if __name__ == "__main__" :   记得要加冒号和双引号
+    big_one = IceCreamStand('The Big One')
+    big_one.flavors = ['vanilla', 'chocolate', 'black cherry']
+    big_one.describe_restaurant()
+    big_one.show_flavors()

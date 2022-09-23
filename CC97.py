@@ -40,4 +40,3 @@ this_user = Admin('alex', 'white')
 this_user.privileges = ['can add post', 'can delete post', 'can ban user']
 this_user.show_privileges()
 
-
